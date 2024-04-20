@@ -1,0 +1,37 @@
+{
+  "name": "authentication-authorization-node",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "ts-node-dev --env-file .env src/server.ts",
+    "migrationGenerate": "typeorm-ts-node-commonjs  migration:generate -d data-sources-migrations.ts",
+    "migrationRun": "typeorm-ts-node-commonjs migration:run -d data-sources-migrations.ts"
+  },
+  "keywords": [],
+  "author": "Angelon",
+  "devDependencies": {
+    "@types/bcrypt": "^5.0.2",
+    "@types/cors": "^2.8.17",
+    "@types/express": "^4.17.21",
+    "@types/jsonwebtoken": "^9.0.6",
+    "@types/node": "^20.11.16",
+    "@types/pg": "^8.11.4",
+    "@types/uuid": "^9.0.8",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "jsonwebtoken": "^9.0.2",
+    "pg": "^8.11.3",
+    "reflect-metadata": "^0.2.1",
+    "ts-node-dev": "^2.0.0",
+    "typeorm": "^0.3.20",
+    "uuid": "^9.0.1",
+    "zod": "^3.22.4",
+    "zod-error": "^1.5.0"
+  }
+}
